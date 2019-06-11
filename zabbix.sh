@@ -19,7 +19,7 @@ fi
 # Realiza processo de configuração do zabbix
 mkdir /etc/zabbix/old
 mv /etc/zabbix/zabbix_agent*.conf /etc/agent/old
-wget http://pinkan.neogeo.inf.b/zabbix/zabbix_agentd.conf
+wget https://github.com/Crysius/Zabbix/zabbix_agentd.conf
 mv zabbix_agentd.conf /etc/zabbix
 service zabbix-agent restart
 sudo chmod 755 /etc/init.d/zabbix-agent
